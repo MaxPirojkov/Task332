@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Таск322</string>
+    <string name="list">1.Машина; 2.Стол; 3.Солнце; 4.Небо; 5.Свобдно</string>
+
+    <string-array name="lang">
+        <item>Русский</item>
+        <item>Английский</item>
+    </string-array>
+</resources>

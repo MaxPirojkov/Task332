@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Task322</string>
+    <string name="list">1.Car; 2.Table; 3.Sun; 4.Sky; 5.Free</string>
+
+    <string-array name="lang">
+        <item>Russian</item>
+        <item>English</item>
+    </string-array>
+</resources>
