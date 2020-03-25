@@ -31,18 +31,10 @@ public class MainActivity extends AppCompatActivity {
                 String checkLang = spinner.getSelectedItem().toString();
                 System.out.println(checkLang);
                 if ((checkLang).equals("Russian")){
-                    Locale locale = new Locale("ru");
-                    Configuration config = new Configuration();
-                    config.setLocale(locale);
-                    getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
-                    recreate();
+                    setLanguage("ru");
                 } else {
                     if ((checkLang).equals("Английский")){
-                            Locale locale = new Locale("en");
-                            Configuration config = new Configuration();
-                            config.setLocale(locale);
-                            getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
-                            recreate();
+                            setLanguage("en");
                         }
                 }
             }
@@ -51,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void setLanguage(String language) {
+        Locale locale = new Locale(language);
+        Configuration config = new Configuration();
+        config.setLocale(locale);
+        getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        recreate();
+    }
 
 
 }
